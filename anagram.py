@@ -31,7 +31,7 @@ def anagram(s1,s2):
         else:
             count[letter] = 1
 
-    for letter in s1:
+    for letter in s2:
         if letter in count:
             count[letter] -=1
         else:
