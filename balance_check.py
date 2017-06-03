@@ -10,6 +10,8 @@
 
 #Testing Client:
 
+from stack import stack
+
 class TestBalanceCheck(object):
 
     def Client(self, sol):
