@@ -94,5 +94,5 @@ def cycle_check2(node):
 
 
 """difference between my solution and the second one is that my function traverses till
-end of the linked list, going through each and every node. But the second solution skips one node
+the end of the linked list, going through each and every node. But the second solution skips one node
 and jumps two nodes ahead, therby making runtime < O(n)."""
