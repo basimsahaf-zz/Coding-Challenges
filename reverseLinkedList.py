@@ -30,8 +30,8 @@ class TestReverse(object):
         print("All Test Cases are Correct")
 
 #Solution:
-def reverse(nodeObj):
 
+def reverse(nodeObj):
     if nodeObj.nextnode == None:
         return nodeObj
     prevNode = None
