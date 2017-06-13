@@ -1,7 +1,6 @@
 """Write a function that takes a head node and an integer value n and
 then returns the nth to last node in the linked list."""
 
-
 class Node(object):
 
     def __init__(self,k):
