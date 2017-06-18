@@ -1,6 +1,7 @@
 """Given a Binary tree find total number of clusters in a binary tree.
 
-Cluster Definition: Assume there are two colors of node RED and BLUE. A start of cluster is when root, left and right have same color Node.
+Cluster Definition: Assume there are two colors of node RED and BLUE.
+A start of cluster is when root, left and right have same color Node.
 
 """
 
@@ -38,12 +39,11 @@ def findNodes(bnode, blen):
     try:
         if bnode.value==bnode.left.value and bnode.value==bnode.right.value:
             blen += 1
+            blen = findNodes(bnode.left,blen)
+            blen = findNodes(bnode.right,blen)
     except AttributeError:
         pass
-    if bnode.left:
-        blen = findNodes(bnode.left,blen)
-    if bnode.right:
-        blen = findNodes(bnode.right,blen)
+
     return blen
 
 
